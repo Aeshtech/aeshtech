@@ -1,7 +1,7 @@
 <h1 align="center">
   <img src="https://raw.githubusercontent.com/Aeshtech/aeshtech/main/name.svg" alt="Developer Ashish" />
 </h1>
-<h2 Hi there 👋 Jai Shree Krishna (राधे राधे)🙏🏻, I'm Ashish Sharma! <img src="https://media.giphy.com/media/12oufCB0MyZ1Go/giphy.gif" width="50"></h2>
+<h2> Hi there 👋 Jai Shree Krishna (राधे राधे)🙏🏻, I'm Ashish Sharma! <img src="https://media.giphy.com/media/12oufCB0MyZ1Go/giphy.gif" width="50"></h2>
 
 Welcome to Aeshtech - 
 Here are some ideas to get you started:
