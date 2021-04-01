@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://github.com/Aeshtech/aeshtech/edit/main/name.svg" alt="Developer Ashish" />
+  <img src="https://raw.githubusercontent.com/Aeshtech/aeshtech/main/name.svg" alt="Developer Ashish" />
 </h1>
 Hi there 👋 This is Ashish Sharma .
 Welcome to Aeshtech - https://
