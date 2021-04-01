@@ -1,4 +1,6 @@
-
+<h1 align="center">
+  <img src="https://github.com/Aeshtech/aeshtech/edit/main/name.svg" alt="Developer Ashish" />
+</h1>
 Hi there 👋 This is Ashish Sharma .
 Welcome to Aeshtech - https://
 Here are some ideas to get you started:
