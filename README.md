@@ -1,8 +1,6 @@
-### Hi there 👋
 
-<!--
-**Aeshtech/aeshtech** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
+Hi there 👋 This is Ashish Sharma .
+Welcome to Aeshtech - https://
 Here are some ideas to get you started:
 
 - 🔭 I’m currently working on ...
