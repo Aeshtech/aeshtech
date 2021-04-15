@@ -22,7 +22,9 @@
 
 
 <div align="center">
+  
   [<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white">](http://www.linkedin.com/in/Aeshtech)
   [<img src="https://img.shields.io/badge/Portfolio-%23000000.svg?&style=for-the-badge">](https://Aeshtech.com)
   ![visitors](https://visitor-badge.laobi.icu/badge?page_id=Aeshtech.Aeshtech)
+  
 </div>
