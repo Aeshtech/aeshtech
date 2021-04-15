@@ -20,4 +20,6 @@
 
 
 
-<div align="center">![visitors](https://visitor-badge.laobi.icu/badge?page_id=Aeshtech.Aeshtech)</div>
+
+ ![visitors](https://visitor-badge.laobi.icu/badge?page_id=Aeshtech.Aeshtech)
+
