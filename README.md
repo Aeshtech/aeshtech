@@ -18,3 +18,6 @@
 - 😄 Pronouns: he/him
 - ⚡ Fun fact: The more you understand me the more will you like me.
 
+
+
+<div align="center">![visitors](https://visitor-badge.laobi.icu/badge?page_id=Aeshtech)</div>
