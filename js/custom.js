@@ -1,4 +1,4 @@
-// ----------------------------------------------JSK---------------------------------***
+// --------------------------------------Jai shree Krishna---------------------------------------//
 // change background color to white and shadow of navbar on scroll down.
 window.addEventListener("contextmenu", e => e.preventDefault());
 $(document).ready(function () {
@@ -123,12 +123,15 @@ setTimeout(function () {
 }, 1000);
 
 })
-/*===========================Contact Form===============================*/
+/*===========================Contact Form with validation===============================*/
 contactForm = document.getElementById("myForm");
 button = document.getElementById('submitForm');
 submitBtnDiv = document.getElementById('submitBtnDiv');
-button.onclick = function (e) {
 
+// Function to proceed azax request after successfully validation.//
+button.onclick = function (e) {
+  //when this conditon is true than only azax request can make.
+  if(valiadate()){
   FormData = new FormData(contactForm); //storing forms's data into FormData
   var xhr = new XMLHttpRequest();
   xhr.onreadystatechange = function () {
@@ -140,4 +143,84 @@ button.onclick = function (e) {
   submitBtnDiv.innerHTML = '<span class="spinner-border spinner-border-sm mr-2" role="status" aria-hidden="true"></span> Sending...';
   xhr.send(FormData);
   contactForm.reset();
+  }
+}
+// setting success class in parent for specified element recieved as argument in input para.
+const setSuccessMsg = (input) => {
+  const parent = input.parentElement;
+  parent.className = "parent success";
+}
+//checking for email format correctness.
+const isEmail = (emailVal) => {
+  var atSymbol = emailVal.indexOf("@");
+  if(atSymbol < 1) return false;
+  var dot = emailVal.lastIndexOf('.');
+  if(dot <= atSymbol + 3) return false;
+  if(dot === emailVal.length-1) return false;
+  return true;
+}
+
+// ========Main function for validation==========//
+const valiadate = () => {
+  const name = document.getElementById("name");
+  const email = document.getElementById("email");
+  const address = document.getElementById("address");
+  const mssg = document.getElementById("message");
+  const nameVal = name.value.trim();
+  const emailVal = email.value.trim();
+  const addressVal = address.value.trim();
+  const mssgVal = mssg.value.trim();
+  var returnValue = true;
+
+  //validate name
+  if(nameVal===""){
+    setErrorMsg(name,'Name cannot be empty!');
+  }else if(name.length <=2){
+    setErrorMsg(name,'Name must contain min 3 char!');
+  }else{
+    setSuccessMsg(name);
+  }
+
+  //validate email
+  if(emailVal===""){
+    setErrorMsg(email,'Email cannot be empty!');
+  }else if(! isEmail(emailVal)){
+    setErrorMsg(email,'Not a valid email!');
+  }else{
+    setSuccessMsg(email);
+  }
+
+//validate address
+if(addressVal ===""){
+  setErrorMsg(address,'Address cannot be empty!');
+}else if(addressVal.length <=3){
+  setErrorMsg(address,'Address must contain min 3 char!');
+}else{
+  setSuccessMsg(address);
+}
+
+//validate message
+if(mssgVal ===""){
+  setErrorMsg(mssg,'Message cannot be empty!');
+}else if(mssgVal.length <= 10){
+  setErrorMsg(mssg,'Message must contain min 10 char!');
+}else{
+  setSuccessMsg(mssg);
+}
+// setting error message for specified element recieved as argument in input para.
+function setErrorMsg(input,errormsg){
+  const parent = input.parentElement;
+  parent.className = "parent error"; //// setting success class in parent
+  const small = parent.querySelector('small');
+  small.innerText = errormsg;
+  returnValue = false;
+}
+
+/*this will return true only when returnvalue variable contain true else if it is overridden by
+any of setErrorMsg to false than this will return false.*/
+  if(returnValue === true){
+    return true;
+  }else{
+    return false;
+  }
 }

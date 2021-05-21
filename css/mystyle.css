@@ -7,6 +7,9 @@
     --grad3: linear-gradient(to right, #ff04bd, #0216fffa);
     --dark: #161625;
 }
+* {
+    box-sizing: border-box;
+}
 html, body{
     overflow-x: hidden;
 }
@@ -95,11 +98,6 @@ body{
     box-shadow: unset;
     border: none;
 }
-
-.navbar-light .navbar-toggler-icon {
-    background-image: url('../assets/navicon1.svg');
-}
-
 .container {
     margin: 0px auto;
 }
@@ -172,7 +170,7 @@ nav.navbar ul.navbar-nav li {
 }
 
 #header .text3 {
-    margin-top: calc(75vh - 50%);
+    margin-top: calc(75vh - 55%);
 }
 
 #header .text3 h3 {
@@ -211,8 +209,8 @@ nav.navbar ul.navbar-nav li {
     background: transparent;
     border: 1px solid #fff;
     margin-left: 10px;
-    border-radius: 100%;
-    padding: 7px 7px;
+    border-radius: 50%;
+    padding: 10px 10px;
     font-size: 14px;
     transform: rotate(0);
 }
@@ -223,54 +221,57 @@ nav.navbar ul.navbar-nav li {
 }
 
 #header .text3 .social-icon2 li .facebook i {
-    padding: 8px 11px;
+    padding: 10px 13px;
     color: #3b5999;
     border: 1px solid #3b5999;
 }
 
 #header .text3 .social-icon2 li .facebook i:hover {
-    padding: 8px 11px;
     background: #3b5999;
     border: 1px solid #3b5999;
     color: #fff;
 }
 
-#header .text3 .social-icon2 li .dribble i {
-    padding: 8px;
+#header .text3 .social-icon2 li .instagram i {
     color: #ea4c89;
     border: 1px solid #ea4c89;
 }
 
-#header .text3 .social-icon2 li .dribble i:hover {
-    padding: 8px;
+#header .text3 .social-icon2 li .instagram i:hover {
     background: #ea4c89;
     border: 1px solid #ea4c89;
     color: #fff;
 }
 
-#header .text3 .social-icon2 li .behance i {
-    padding: 8px 7px 8px 8px;
+#header .text3 .social-icon2 li .twitter i {
     color: #1769ff;
     border: 1px solid #1769ff;
 }
+#header .text3 .social-icon2 li .twitter i:hover {
+    background: #1769ff;
+    border: 1px solid #1769ff;
+    color: white;
+}
 
 #header .text3 .social-icon2 li .linkedin i {
-    padding: 8px 9px;
     color: #0077b5;
     border: 1px solid #0077b5;
 }
 
 #header .text3 .social-icon2 li .linkedin i:hover {
-    padding: 8px 9px;
     background: #0077b5;
     border: 1px solid #0077b5;
     color: #fff;
 }
 
-#header .text3 .social-icon2 li .google i {
-    padding: 8px 6px;
-    color: #dd4b39;
-    border: 1px solid #dd4b39;
+#header .text3 .social-icon2 li .github i {
+    color: var(--dark);
+    border: 1px solid var(--dark);
+}
+#header .text3 .social-icon2 li .github i:hover {
+    color: white;
+    background: var(--dark);
+    border: 1px solid var(--dark);
 }
 
 #header .mouse-icon {
@@ -345,11 +346,12 @@ nav.navbar ul.navbar-nav li {
 }
 
 #about3 .stat:before {
-    width: 1px;
-    height: 350px;
+    width: 3px;
+    height: calc(100% - 90px);
     background-color: #f3f3f3;
     position: absolute;
-    top: 40px;
+    top: 50%;
+    transform: translateY(-50%);
     left: 50%;
     content: "";
     transition: all .5s ease-in-out;
@@ -357,11 +359,11 @@ nav.navbar ul.navbar-nav li {
 }
 
 #about3 .stat:after {
-    width: 400px;
-    height: 1px;
+    width: calc(100% - 50px);
+    height: 3px;
     background-color: #f3f3f3;
     position: absolute;
-    bottom: 200px;
+    bottom: 50%;
     left: 50%;
     transform: translateX(-50%);
     content: "";
@@ -908,41 +910,47 @@ section {
 
 .conform input {
     width: 100%;
+    border: none;
+    border-bottom: 2px solid #f3f3f3;
+    background: none;
+    color: #f3f3f3;
+    padding: 10px;
 }
-
+.conform .parent{
+    position: relative;
+}
+.conform .parent i{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    visibility: hidden;
+}
+.parent.success i.fa-check-circle{
+    color: greenyellow;
+    visibility: visible;
+}
+.parent small{
+    display: none;
+}
+.parent.success small{
+    display: none;
+}
+.parent.error i.fa-exclamation-circle{
+    color: red;
+    visibility: visible;
+}
+.parent.error small{
+    display: block;
+}
+.parent.success input, .parent.success textarea{
+    border: 2px solid greenyellow;
+} 
+.parent.error input, .parent.error textarea{
+    border: 2px solid red;
+} 
 .conform input::placeholder {
     color: #fff;
 }
-
-.conform form input:focus, .conform textarea:focus {
-    border: 2px solid #fff;
-    outline: none;
-}
-
-.conform input[type=text] {
-    border: none;
-    border-bottom: 2px solid #f3f3f3;
-    background: none;
-    color: #f3f3f3;
-    padding: 10px;
-}
-
-.conform input[type=email] {
-    border: none;
-    border-bottom: 2px solid #f3f3f3;
-    background: none;
-    color: #f3f3f3;
-    padding: 10px;
-}
-
-.conform input[type=email] {
-    border: none;
-    border-bottom: 2px solid #f3f3f3;
-    background: none;
-    color: #f3f3f3;
-    padding: 10px;
-}
-
 .conform textarea {
     border: none;
     border-bottom: 2px solid #f3f3f3;
@@ -953,11 +961,13 @@ section {
     width: 100%;
     resize: vertical;
 }
-
 .conform textarea::placeholder {
     color: #fff;
 }
-
+.conform form input:focus, .conform textarea:focus {
+    border: 2px solid #fff;
+    outline: none;
+}
 #contact .conform .btn {
     border-radius: 30px;
     border: none;
@@ -970,7 +980,6 @@ section {
     margin-top: 20px;
     outline: none;
 }
-
 #contact .conform .btn i {
     color: #f3f3f3;
     background: var(--grad1);
@@ -1106,9 +1115,6 @@ section {
 }
 
 @media only screen and (max-width: 767px) {
-    /* .col-md-5 {
-        width: 36.666667%;
-      } */
     #header {
         background: url(../assets/bg1.png) 35% no-repeat fixed;
         min-height: 300px;
@@ -1185,8 +1191,28 @@ section {
         margin-left: 40px;
         font-size: 12px;
     }
-    .services {
+    #service .services {
         margin: 10px auto! important;
         width: 100%! important;
+    }
+}
+
+/* =========Tablets======== */
+@media only screen and (min-width: 767px) and (max-width:1024px){
+    #header{
+        background: url(../assets/bg1.png) 35%/cover no-repeat fixed;
+    }
+    .navbar-light .navbar-toggler-icon {
+        background-image: url('../assets/navicon2.svg');
+    }
+    #portfolio .element-item{
+        width: 50%;
+    }
+    #service .services{
+        width: 47%!important;
+        margin: 10px!important;
+    }
+    #header .menu3{
+        margin-left: 30%!important;
     }
 }
