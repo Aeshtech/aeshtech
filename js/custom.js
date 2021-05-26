@@ -50,7 +50,7 @@ $(document).ready(function(){
   });
 });
 
-//  targeting project gallery button for data-filter using isotope library
+// ============targeting project gallery button for data-filter using isotope library===========//
 let $btns = $('.project-area .button-group button');
 
 $btns.click(function (e) {
@@ -123,6 +123,38 @@ setTimeout(function () {
 }, 1000);
 
 })
+
+//========== counter for about section=====================//
+var counted = 0;
+$(window).scroll(function() {
+
+  var oTop = $('#about3').offset().top - window.innerHeight;
+  if (counted == 0 && $(window).scrollTop() > oTop) {
+    $('.counter').each(function() {
+      var $this = $(this),
+        countTo = $this.attr('data-count');
+      $({
+        countNum: $this.text()
+      }).animate({
+          countNum: countTo
+        },
+        {
+          duration: 5000,
+          easing: 'swing',
+          step: function() {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function() {
+            $this.text(this.countNum);
+            //alert('finished');
+          }
+
+        });
+    });
+    counted = 1;
+  }
+});
+
 /*===========================Contact Form with validation===============================*/
 contactForm = document.getElementById("myForm");
 button = document.getElementById('submitForm');

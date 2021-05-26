@@ -54,7 +54,12 @@
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="navbar-brand" href="#">Aeshtech</a>
+          <a href="#">
+            <div class="navbar-brand">
+              <img src="assets/logo/aeshtech-icon.png" width="100" alt="Logo not found">
+              <span>Aeshtech</span>
+            </div>
+          </a>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu3 wow zoomIn" data-wow-duration="2s">
               <li class="nav-item">
@@ -81,7 +86,7 @@
     <div class="container">
       <div class="row wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
         <div class="col-md-10 offset-md-2 text-end text3">
-          <h3>Hello I’m</h3>
+          <h3>Hey, I'm</h3>
           <div class="type-wrap">
             <h1>ASHISH SHARMA</h1>
             <div id="typed-strings" style="display: none;">
@@ -107,7 +112,7 @@
             <li>
               <a class="twitter" href="#"><i class="fab fa-twitter"></i></a>
             </li>
-           
+
           </ul>
         </div>
       </div>
@@ -115,22 +120,20 @@
     <a href="#about3" data-scroll="smooth" class="mouse-icon "><span class="wheel"></span></a>
   </header>
 
-
   <div id="about3">
     <div class="container">
       <div class="row">
-        <div class="col-md-5 offset-md-1 stat wow slideInRight" data-wow-duration="2s" data-wow-delay=".2s"
-          style="visibility: visible; animation-duration: 2s; animation-delay: 0.2s; animation-name: slideInRight;">
+        <div class="col-md-5 offset-md-1 stat wow slideInRight" data-wow-duration="2s" data-wow-delay=".2s">
           <div class="row">
             <div class="col-md-6 sub">
               <div class="facts-counter">
-                <span class="counter">482</span>
+                <span class="counter" data-count="7">0</span>
               </div>
               <h2>Projects Completed</h2>
             </div>
             <div class="col-md-6 sub">
               <div class="facts-counter">
-                <span class="counter">934</span>
+                <span class="counter" data-count="7">0</span>
               </div>
               <h2>Creative Designs</h2>
             </div>
@@ -138,15 +141,15 @@
           <div class="row">
             <div class="col-md-6 sub1">
               <div class="facts-counter">
-                <span class="counter">366</span>
+                <span class="counter" data-count="11">0</span>
               </div>
-              <h2>Happy Clients</h2>
+              <h2>Technologies Familier</h2>
             </div>
             <div class="col-md-6 sub1">
               <div class="facts-counter">
-                <span class="counter">7322</span>
+                <span class="counter" data-count="100">0</span>
               </div>
-              <h2>Happy Clients</h2>
+              <h2>Github commits</h2>
             </div>
           </div>
         </div>
@@ -154,11 +157,7 @@
           style="visibility: visible; animation-duration: 2s; animation-delay: 0.2s; animation-name: slideInLeft;">
           <h5>about</h5>
           <h2>A few words<br>about us</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua.
-            ad minim veniam, quis nostrud exercitation ullamco lsix blind
-            smart out burst. Perfectly on furniture dejection determine
-            my plasere lorem ipsum.</p>
+          <p>Full Stack Developer ll SDE student. A fun loving person who love to make useful, meaningful and community oriented software. Proficient in Web Application Development and Programming with robust Data Structure and Alogorithms intellectuallity.</p>
           <a class="btn" href=""><i class="fas fa-eye"></i>My Portfolio</a>
         </div>
       </div>
@@ -217,142 +216,115 @@
         <button type="button" class="active" id="btn1" data-filter="*">All</button>
         <button type="button" data-filter=".popular" class="">Popular</button>
         <button type="button" data-filter=".latest" class="">Latest</button>
-        <button type="button" data-filter=".following" class="">Following</button>
-        <button type="button" data-filter=".upcoming" class="">Upcoming</button>
+        <button type="button" data-filter=".top-three" class="">Top Three</button>
       </div>
 
-      <div class="row grid" style="position: relative; height: 1204.76px;">
-        <div class="col-lg-4 col-md-6 col-sm-12 element-item latest" style="position: absolute; left: 0px; top: 0px;">
+      <div class="row grid">
+        <div class="col-lg-4 col-md-6 col-sm-12 element-item">
+        <div class="our-project  wow fadeInUp" data-wow-duration="1s" data-wow-offset="200">
+          <div class="img">
+            <img src="assets/Project-gallery/Aeshtech-V1.png" alt="portfolio-1" class="img-fluid">
+            <div class="search">
+              <a href="assets/gallery_pic.png" class="test-popup-link"><i class="fas fa-search-plus"></i></a>
+            </div>
+          </div>
+          <div class="title pb-3">
+            <h4>Aeshtech-V1</h4>
+            <span class="text-secondary">June 2020</span>
+            <div class="project-links">
+              <a href="#" class="fab fa-github" aria-hidden="true"></a>
+              <a href="#" class="fa fa-eye" aria-hidden="true"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 element-item popular top-three">
           <div class="our-project wow fadeInUp" data-wow-duration="1s" data-wow-offset="200">
             <div class="img">
-              <img src="assets/gallery_pic.png" alt="portfolio-1" class="img-fluid">
+              <img src="assets/Project-gallery/Covd19-India-Tracker.png" alt="portfolio-1" class="img-fluid">
               <div class="search">
                 <a href="assets/gallery_pic.png" class="test-popup-link"><i class="fas fa-search-plus"></i></a>
               </div>
             </div>
             <div class="title pb-3">
-              <h4 class="text-uppercase">Minimul Desing</h4>
-              <span class="text-secondary">Latest, Portfolio</span>
+              <h4>Covid19 India Tracker</h4>
+              <span class="text-secondary">August 2020</span>
+              <div class="project-links">
+                <a href="#" class="fab fa-github" aria-hidden="true"></a>
+                <a href="#" class="fa fa-eye" aria-hidden="true"></a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 element-item popular"
-          style="position: absolute; left: 320px; top: 0px;">
+        <div class="col-lg-4 col-md-6 col-sm-12 element-item popular top-three">
           <div class="our-project  wow fadeInUp" data-wow-duration="1s" data-wow-offset="200">
             <div class="img">
-              <img src="assets/gallery_pic.png" alt="portfolio-1" class="img-fluid">
+              <img src="assets/Project-gallery/DigiVGI.png" alt="portfolio-1" class="img-fluid">
               <div class="search">
                 <a href="assets/gallery_pic.png" class="test-popup-link"><i class="fas fa-search-plus"></i></a>
               </div>
             </div>
             <div class="title pb-3">
-              <h4 class="text-uppercase">Paint Wall</h4>
-              <span class="text-secondary">Popular, Portfolio</span>
+              <h4>DigiVGI</h4>
+              <span class="text-secondary">Aug 2020- Jan 2021</span>
+              <div class="project-links">
+                <a href="#" class="fab fa-github" aria-hidden="true"></a>
+                <a href="#" class="fa fa-eye" aria-hidden="true"></a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 element-item popular"
-          style="position: absolute; left: 640px; top: 0px;">
+        <div class="col-lg-4 col-md-6 col-sm-12 element-item popular latest top-three">
           <div class="our-project  wow fadeInUp" data-wow-duration="1s" data-wow-offset="200">
             <div class="img">
-              <img src="assets/gallery_pic.png" alt="portfolio-1" class="img-fluid">
+              <img src="assets/Project-gallery/Aeshtech-V2.png" alt="portfolio-1" class="img-fluid">
               <div class="search">
                 <a href="assets/gallery_pic.png" class="test-popup-link"><i class="fas fa-search-plus"></i></a>
               </div>
             </div>
             <div class="title pb-3">
-              <h4 class="text-uppercase">Female light</h4>
-              <span class="text-secondary">Popular, Portfolio</span>
+              <h4>Aeshtech-V2</h4>
+              <span class="text-secondary">May 2021</span>
+              <div class="project-links">
+                <a href="#" class="fab fa-github" aria-hidden="true"></a>
+                <a href="#" class="fa fa-eye" aria-hidden="true"></a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming"
-          style="position: absolute; left: 0px; top: 346.725px;">
+        <div class="col-lg-4 col-md-6 col-sm-12 element-item">
           <div class="our-project  wow fadeInUp" data-wow-duration="1s" data-wow-offset="200">
             <div class="img">
-              <img src="assets/gallery_pic.png" alt="portfolio-1" class="img-fluid">
+              <img src="assets/Project-gallery/STRM.jpg" alt="portfolio-1" class="img-fluid">
               <div class="search">
                 <a href="assets/gallery_pic.png" class="test-popup-link"><i class="fas fa-search-plus"></i></a>
               </div>
             </div>
             <div class="title pb-3">
-              <h4 class="text-uppercase">Fourth Air</h4>
-              <span class="text-secondary">Upcoming, Portfolio</span>
+              <h4>Student-Teacher Record Manager</h4>
+              <span class="text-secondary">July 2020</span>
+              <div class="project-links">
+                <a href="#" class="fab fa-github" aria-hidden="true"></a>
+                <a href="#" class="fa fa-eye" aria-hidden="true"></a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming"
-          style="position: absolute; left: 640px; top: 346.725px;">
+        <div class="col-lg-4 col-md-6 col-sm-12 element-item">
           <div class="our-project  wow fadeInUp" data-wow-duration="1s" data-wow-offset="200">
             <div class="img">
-              <img src="assets/gallery_pic.png" alt="portfolio-1" class="img-fluid">
+              <img src="assets/Project-gallery/CRUD-App.jpg" alt="portfolio-1" class="img-fluid">
               <div class="search">
                 <a href="assets/gallery_pic.png" class="test-popup-link"><i class="fas fa-search-plus"></i></a>
               </div>
             </div>
             <div class="title pb-3">
-              <h4 class="text-uppercase">Muliple fown</h4>
-              <span class="text-secondary">Upcoming, Portfolio</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 element-item following"
-          style="position: absolute; left: 320px; top: 401.587px;">
-          <div class="our-project  wow fadeInUp" data-wow-duration="1s" data-wow-offset="200">
-            <div class="img">
-              <img src="assets/gallery_pic.png" alt="portfolio-1" class="img-fluid">
-              <div class="search">
-                <a href="assets/gallery_pic.png" class="test-popup-link"><i class="fas fa-search-plus"></i></a>
+              <h4>CRUD-App</h4>
+              <span class="text-secondary">December 2020</span>
+              <div class="project-links">
+                <a href="#" class="fab fa-github" aria-hidden="true"></a>
+                <a href="#" class="fa fa-eye" aria-hidden="true"></a>
               </div>
-            </div>
-            <div class="title pb-3">
-              <h4 class="text-uppercase">Together sign</h4>
-              <span class="text-secondary">Following, Portfolio</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 element-item following"
-          style="position: absolute; left: 0px; top: 701.287px;">
-          <div class="our-project  wow fadeInUp" data-wow-duration="1s" data-wow-offset="200">
-            <div class="img">
-              <img src="assets/gallery_pic.png" alt="portfolio-1" class="img-fluid">
-              <div class="search">
-                <a href="assets/gallery_pic.png" class="test-popup-link"><i class="fas fa-search-plus"></i></a>
-              </div>
-            </div>
-            <div class="title pb-3">
-              <h4 class="text-uppercase">Green Heaven</h4>
-              <span class="text-secondary">Following, Portfolio</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 element-item following"
-          style="position: absolute; left: 640px; top: 709.125px;">
-          <div class="our-project  wow fadeInUp" data-wow-duration="1s" data-wow-offset="200">
-            <div class="img">
-              <img src="assets/gallery_pic.png" alt="portfolio-1" class="img-fluid">
-              <div class="search">
-                <a href="assets/gallery_pic.png" class="test-popup-link"><i class="fas fa-search-plus"></i></a>
-              </div>
-            </div>
-            <div class="title pb-3">
-              <h4 class="text-uppercase">Fly Male</h4>
-              <span class="text-secondary">Following, Portfolio</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming"
-          style="position: absolute; left: 320px; top: 865.875px;">
-          <div class="our-project  wow fadeInUp" data-wow-duration="1s" data-wow-offset="200">
-            <div class="img">
-              <img src="assets/gallery_pic.png" alt="portfolio-1" class="img-fluid">
-              <div class="search">
-                <a href="assets/gallery_pic.png" class="test-popup-link"><i class="fas fa-search-plus"></i></a>
-              </div>
-            </div>
-            <div class="title pb-3">
-              <h4 class="text-uppercase">Camera Lens</h4>
-              <span class="text-secondary">Upcoming, Portfolio</span>
             </div>
           </div>
         </div>
@@ -377,60 +349,45 @@
           </div>
           <div class="items">
             <i class="far fa-circle"></i>
-            <h6 class="wow fadeInRight" data-wow-duration="1s">ART &amp; PHOTO EDITING,<span>CAMBRIDGE
-                UNIVERSIRTY</span></h6>
-            <span>September 2009 - June 2012</span>
-            <p class="wow flipInX" data-wow-duration="2s">Expenses as material breeding insisted building to in.
-              Continual so distrusts pronounce by unwilling
-              listening. Thing do taste on we manor.</p>
+            <h6 class="wow fadeInRight" data-wow-duration="1s">Bachelor of Technology (CSE), <span>AKTU Lucknow U.P</span></h6>
+            <span>August 2018 - Persuing</span>
+            <p class="wow flipInX" data-wow-duration="2s">"The most common thing of all Engineers which i learned whithin Engineering life is that,<em>"The engineer's first problem in any design situation is to discover what the problem really is."</em> </p>
           </div>
-          <div class="items2">
+          <div class="items2 a">
             <i class="far fa-circle"></i>
-            <h6 class="wow bounceInRight" data-wow-duration="1s">WEB DESIGN TECHNIQUES,<span>ISTA BEN MSIK TRAINING
-                CENTER</span></h6>
+            <h6 class="wow bounceInRight" data-wow-duration="1s">Senior Secondary Education (10+2), <span>Shaiffali Public School</span></h6>
             <span>September 2007 - June 2009</span>
-            <p class="wow flipInX" data-wow-duration="2s">Expenses as material breeding insisted building to in.
-              Continual so distrusts pronounce by unwilling
-              listening. Thing do taste on we manor.</p>
+            <p class="wow flipInX" data-wow-duration="2s">After took Science in Senior secondary i always relate theortical life with practical one, and mostly times i used to think that how actually these mobile application works and who make these.</p>
           </div>
-          <div class="items2">
+          <div class="items2 b">
             <i class="far fa-circle"></i>
-            <h6 class="wow fadeInRight" data-wow-duration="1s">BACCALAUREATE: EXPERIMENTAL SCIENCES,<span>MLY ISMAIL
-                HIGH SCHOOL</span></h6>
+            <h6 class="wow fadeInRight" data-wow-duration="1s">Secondary Education (10), <span>Shaiffali Public School</span></h6>
             <span>September 2003 - June 2006</span>
-            <p class="wow flipInX" data-wow-duration="2s">Expenses as material breeding insisted building to in.
-              Continual so distrusts pronounce by unwilling
-              listening. Thing do taste on we manor.</p>
+            <p class="wow flipInX" data-wow-duration="2s">During secondary education the most popular and famous tagline that our teachers always used to say in the morning assembly<em>"Find your dream my dear students"</em> But I did't understand this even till then, I often thought that after all I would never have dreams related to career other than ghosts.</p>
           </div>
         </div>
         <div class="col-md-6">
           <div class="graduate d-flex">
             <i class="fas fa-briefcase"></i>
-            <h4>Work Experiences</h4>
+            <h4>Achievments/Certification</h4>
           </div>
           <div class="items">
             <i class="far fa-circle"></i>
-            <h6 class="wow fadeInRight" data-wow-duration="1s">MID-LEVEL DESIGNER AT ENVATO MARKET</h6>
-            <span>June 2016 - Up to now</span>
-            <p class="wow flipInX" data-wow-duration="2s">Expenses as material breeding insisted building to in.
-              Continual so distrusts pronounce by unwilling
-              listening. Thing do taste on we manor.</p>
+            <h6 class="wow fadeInRight" data-wow-duration="1s">Home Internship- DigiVGI</h6>
+            <span>Oct 2020 - Jan 2021</span>
+            <p class="wow flipInX" data-wow-duration="2s">Home internship means i worked solo on my major project named as "DigiVGI" an dedicated Attendance Management System for my institute <em>Vishveshwarya Group of Institution.</em>This was my first and biggest backend based project which took almost 6 months to complete as solo.</p>
           </div>
-          <div class="items2">
+          <div class="items2 c">
             <i class="far fa-circle"></i>
-            <h6>WEB DESIGNER &amp; DEVELOPER AT GOOGLE</h6>
-            <span>February 2015 - May 2016</span>
-            <p class="wow flipInX" data-wow-duration="2s">Expenses as material breeding insisted building to in.
-              Continual so distrusts pronounce by unwilling
-              listening. Thing do taste on we manor.</p>
+            <h6>SOBO</h6>
+            <span>March 2020 - Ongoing</span>
+            <p class="wow flipInX" data-wow-duration="2s">SOBO abbreviated as "Suns Out Burns Out" is a startup towards fitness training and consultant to all peoples digitally.There are two experienced IIT's alumni along with me and my friend in our team.</p>
           </div>
-          <div class="items2">
+          <div class="items2 d">
             <i class="far fa-circle"></i>
-            <h6 class="wow fadeInRight" data-wow-duration="1s">FRONT-END DESIGNER AT PIXEL TOUCH</h6>
-            <span>May 2013 - January 2015</span>
-            <p class="wow flipInX" data-wow-duration="2s">Expenses as material breeding insisted building to in.
-              Continual so distrusts pronounce by unwilling
-              listening. Thing do taste on we manor.</p>
+            <h6 class="wow fadeInRight" data-wow-duration="1s">Python Programming Certification (IIT Kanpur)</h6>
+            <span>Feb - Apr 2020</span>
+            <p class="wow flipInX" data-wow-duration="2s">Successfully completed Python Programming Certification program of 3 months from IIT Kanpur. You can also verify certificate using this link <a href="https://ict.iitk.ac.in/certificate-verification/" target="_blank">Verify</a> by providing certificate ID: "2977-30-1e1015b18e45388c" and selecting AKTU from dropdown.</p>
           </div>
         </div>
       </div>
@@ -722,13 +679,15 @@
             <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="1s">
               <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
               <p>Don’t miss any updates of our new templates and extensions.!</p>
-              <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
-                <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
-                <button class="btn btn_get btn_get_two" type="submit">Subscribe</button>
-                <p class="mchimp-errmessage" style="display: none;"></p>
-                <p class="mchimp-sucmessage" style="display: none;"></p>
-              </form>
+
+              <!-- LikeBtn.com BEGIN -->
+              <span class="likebtn-wrapper" data-theme="github" data-white_label="true" data-identifier="item_1"
+                data-share_enabled="false"></span>
+              <script>(function (d, e, s) { if (d.getElementById("likebtn_wjs")) return; a = d.createElement(e); m = d.getElementsByTagName(e)[0]; a.async = 1; a.id = "likebtn_wjs"; a.src = s; m.parentNode.insertBefore(a, m) })(document, "script", "//w.likebtn.com/js/w/widget.js");
+              </script>
+              <!-- LikeBtn.com END -->
             </div>
+            <hr>
           </div>
           <div class="col-lg-3 col-md-6">
             <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" data-wow-duration="1s">
@@ -787,8 +746,9 @@
   <!-- -----------Fontawesome library------------------>
   <script src="https://kit.fontawesome.com/471f9934c1.js" crossorigin="anonymous"></script>
   <!-- -----------Core Jquery------------------------ -->
-  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- --------------wow-min-js----------------------- -->
   <script src="js/wow.min.js" type="text/javascript"></script>
   <!-- ----------Isotope for filtering projects in gallery---------  -->

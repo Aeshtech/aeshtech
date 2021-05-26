@@ -7,23 +7,33 @@
     --grad3: linear-gradient(to right, #ff04bd, #0216fffa);
     --dark: #161625;
 }
+
 * {
     box-sizing: border-box;
 }
-html, body{
+
+html, body {
     overflow-x: hidden;
 }
-body{
-    -youbkit-touch-callout: none; /* iOS Safari */
-    -youbkit-user-select: none;   /* Chrome 6.0+, Safari 3.1+, Edge & Opera 15+ */
-    -moz-user-select: none;    /* Firefox */
-    -ms-user-select: none;        /* IE 10+ and Edge */
-    user-select: none;            /* Non-prefixed version,
+
+body {
+    -youbkit-touch-callout: none;
+    /* iOS Safari */
+    -youbkit-user-select: none;
+    /* Chrome 6.0+, Safari 3.1+, Edge & Opera 15+ */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE 10+ and Edge */
+    user-select: none;
+    /* Non-prefixed version,
                                 currently supported by Chrome and Opera */
 }
+
 .col-md-5 {
     position: relative;
 }
+
 .loaded #loader-wrapper {
     visibility: hidden;
     -webkit-transform: translateY(-100%);
@@ -77,7 +87,7 @@ body{
 /* =======================Header Section======================== */
 
 #header {
-    background: url(../assets/bg1.png) no-repeat center center;
+    background: url(../assets/aesh.jpg) no-repeat center center;
     background-attachment: fixed;
     min-height: 900px;
     background-size: cover;
@@ -98,6 +108,7 @@ body{
     box-shadow: unset;
     border: none;
 }
+
 .container {
     margin: 0px auto;
 }
@@ -106,9 +117,21 @@ body{
     display: inline-block;
     padding-top: 0rem;
     margin-right: 1rem;
-    font-size: 1.25rem;
     line-height: inherit;
     white-space: nowrap;
+}
+
+.navbar-brand img {
+    width: 35px;
+}
+
+.navbar-brand span {
+    font-family: 'Lemon';
+    border: 2px dotted var(--theme);
+    padding: 1px;
+    border-radius: 5px;
+    background: #ffffff8a;
+    color: var(--theme);
 }
 
 .menu3 {
@@ -247,6 +270,7 @@ nav.navbar ul.navbar-nav li {
     color: #1769ff;
     border: 1px solid #1769ff;
 }
+
 #header .text3 .social-icon2 li .twitter i:hover {
     background: #1769ff;
     border: 1px solid #1769ff;
@@ -268,6 +292,7 @@ nav.navbar ul.navbar-nav li {
     color: var(--dark);
     border: 1px solid var(--dark);
 }
+
 #header .text3 .social-icon2 li .github i:hover {
     color: white;
     background: var(--dark);
@@ -435,6 +460,13 @@ nav.navbar ul.navbar-nav li {
     font-size: 11px;
     border-radius: 30px 0% 0% 30px;
 }
+span.counter{
+    font-size: 2rem;
+}
+span.counter:after {
+    content: "+";
+    display: inline-block;
+}
 
 /*====================Start of Service=============== */
 
@@ -523,7 +555,7 @@ section {
 
 .project-area .button-group {
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
 }
 
 .project-area .button-group>button {
@@ -610,6 +642,25 @@ section {
 
 .img-fluid {
     width: 100%;
+}
+
+#portfolio .project-links {
+    display: inline-block;
+    float: right;
+}
+
+#portfolio .project-links a {
+    color: black;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+    line-height: 27px;
+    background: transparent;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid #000000;
+    font-size: 20px;
 }
 
 /* ==================Start of Resume=================== */
@@ -704,21 +755,26 @@ section {
 .items2 i:after {
     position: absolute;
     width: 1px;
-    height: 108px;
     background-color: #3b3b3b;
     bottom: 10px;
     right: 5px;
     content: "";
 }
 
-.items i:after {
-    position: absolute;
-    width: 1px;
-    height: 26px;
-    background-color: #3b3b3b;
-    bottom: 10px;
-    right: 5px;
-    content: "";
+.items2.a i:after {
+    height: 131px;
+}
+
+.items2.b i:after {
+    height: 132px;
+}
+
+.items2.c i:after {
+    height: 153px;
+}
+
+.items2.d i:after {
+    height: 133px;
 }
 
 .items h6 {
@@ -837,13 +893,15 @@ section {
 .owl-carousel .owl-nav button.owl-next span, .owl-carousel .owl-nav button.owl-prev span {
     font-size: 52px;
 }
-.owl-theme .owl-nav [class*=owl-]{
+
+.owl-theme .owl-nav [class*=owl-] {
     background: rgb(255, 255, 255);
-    color:var(--theme);
+    color: var(--theme);
 }
+
 .owl-theme .owl-nav [class*=owl-]:hover {
     background: var(--grad1);
-    color:white;
+    color: white;
 }
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
@@ -856,7 +914,6 @@ section {
     margin: 5px 10px;
     display: block;
     background: transparent;
-    -webkit-backface-visibility: visible;
     transition: opacity .2s ease;
     border-radius: 50%;
     border: 1px solid;
@@ -916,41 +973,52 @@ section {
     color: #f3f3f3;
     padding: 10px;
 }
-.conform .parent{
+
+.conform .parent {
     position: relative;
 }
-.conform .parent i{
+
+.conform .parent i {
     position: absolute;
     top: 15px;
     right: 20px;
     visibility: hidden;
 }
-.parent.success i.fa-check-circle{
+
+.parent.success i.fa-check-circle {
     color: greenyellow;
     visibility: visible;
 }
-.parent small{
+
+.parent small {
     display: none;
 }
-.parent.success small{
+
+.parent.success small {
     display: none;
 }
-.parent.error i.fa-exclamation-circle{
+
+.parent.error i.fa-exclamation-circle {
     color: red;
     visibility: visible;
 }
-.parent.error small{
+
+.parent.error small {
     display: block;
 }
-.parent.success input, .parent.success textarea{
+
+.parent.success input, .parent.success textarea {
     border: 2px solid greenyellow;
-} 
-.parent.error input, .parent.error textarea{
+}
+
+.parent.error input, .parent.error textarea {
     border: 2px solid red;
-} 
+}
+
 .conform input::placeholder {
     color: #fff;
 }
+
 .conform textarea {
     border: none;
     border-bottom: 2px solid #f3f3f3;
@@ -961,13 +1029,16 @@ section {
     width: 100%;
     resize: vertical;
 }
+
 .conform textarea::placeholder {
     color: #fff;
 }
+
 .conform form input:focus, .conform textarea:focus {
     border: 2px solid #fff;
     outline: none;
 }
+
 #contact .conform .btn {
     border-radius: 30px;
     border: none;
@@ -980,6 +1051,7 @@ section {
     margin-top: 20px;
     outline: none;
 }
+
 #contact .conform .btn i {
     color: #f3f3f3;
     background: var(--grad1);
@@ -1116,7 +1188,7 @@ section {
 
 @media only screen and (max-width: 767px) {
     #header {
-        background: url(../assets/bg1.png) 35% no-repeat fixed;
+        background: url(../assets/aesh.jpg) 35% no-repeat fixed;
         min-height: 300px;
         width: 100%;
         height: 75vh;
@@ -1180,8 +1252,11 @@ section {
     .items h6 span, .items2 h6 span {
         font-size: 10px;
     }
-    .items2 i:after {
-        height: 188px;
+    .items2.a i:after, .items2.b i:after, .items2.d i:after {
+        height: 150px;
+    }
+    .items2.c i:after {
+        height: 173px;
     }
     .items span, .items2 span {
         margin-left: 40px;
@@ -1198,21 +1273,34 @@ section {
 }
 
 /* =========Tablets======== */
-@media only screen and (min-width: 767px) and (max-width:1024px){
-    #header{
-        background: url(../assets/bg1.png) 35%/cover no-repeat fixed;
+
+@media only screen and (min-width: 767px) and (max-width:1024px) {
+    #header {
+        background: url(../assets/aesh.jpg) 35%/cover no-repeat fixed;
     }
     .navbar-light .navbar-toggler-icon {
         background-image: url('../assets/navicon2.svg');
     }
-    #portfolio .element-item{
+    #portfolio .element-item {
         width: 50%;
     }
-    #service .services{
+    #service .services {
         width: 47%!important;
         margin: 10px!important;
     }
-    #header .menu3{
+    #header .menu3 {
         margin-left: 30%!important;
+    }
+    .items2.a i:after {
+        height: 191px;
+    }
+    .items2.b i:after {
+        height: 196px;
+    }
+    .items2.c i:after {
+        height: 218px;
+    }
+    .items2.d i:after {
+        height: 176px;
     }
 }
