@@ -2,6 +2,7 @@
 
 :root {
     --theme: blueviolet;
+    --greenry:#14e70d;
     --grad1: linear-gradient( 45deg, #ff04bd, #0216fffa);
     --grad2: linear-gradient(to right, #0072ff, #6f00ff);
     --grad3: linear-gradient(to right, #ff04bd, #0216fffa);
@@ -34,12 +35,75 @@ body {
     position: relative;
 }
 
+/* =====================================Prelaoder============================= */
 .loaded #loader-wrapper {
     visibility: hidden;
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%);
-    -webkit-transition: all 0.3s 1s ease-out;
-    transition: all 0.3s 1s ease-out;
+}
+div#spinnerDiv{
+    position: fixed;
+    background: var(--dark);
+    width: 100%;
+    height: 100vh;
+    z-index: 99999;
+    text-align: center;
+    color: #fff;
+}
+#spinnerDiv h3{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#spinnerDiv .loading-spinner{
+    position: absolute;
+    top: 27%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 10rem;
+    height: 10rem;
+    display: inline-block;
+    border: 3px solid rgba(255,255,255,0.3);
+    border-radius:50%;
+    border-top-color:#fff;
+    margin-bottom:10rem;
+    animation: spin 1s infinite ease-in-out;
+}
+@keyframes spin{
+    to{
+        transform:rotate(360deg);
+    }
+}
+ 
+#spinnerDiv .loading-dots {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.loading-dots > div{
+    width: 3rem;
+    height: 3rem;
+    background: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    animation: bounce 1.5s infinite ease-in-out both;
+}
+.loading-dots .bounce1{
+    animation-delay: -0.30s;
+}
+.loading-dots .bounce2{
+    animation-delay: -0.15s;
+}
+
+@keyframes bounce {
+    0%,80%,100%{
+        transform:scale(0);
+    }
+    40%{
+        transform: scale(1);
+    }
 }
 
 #loader-wrapper {
@@ -68,9 +132,7 @@ body {
     top: 0;
     width: 51%;
     height: 100%;
-    /* background:whitesmoke; */
-    background: linear-gradient( 45deg, black, lightgray);
-    ;
+    background:var(--dark);
 }
 
 .loaded #loader-wrapper .loader-section.section-right {
@@ -84,7 +146,7 @@ body {
     right: 0;
 }
 
-/* =======================Header Section======================== */
+/* ===========================Header Section=========================== */
 
 #header {
     background: url(../assets/aesh.jpg) no-repeat center center;
@@ -181,7 +243,7 @@ nav.navbar ul.navbar-nav li {
 }
 
 .hire2:hover {
-    background: #3bd215;
+    background: var(--greenry);
     color: #fff;
 }
 
@@ -420,11 +482,6 @@ nav.navbar ul.navbar-nav li {
     padding-bottom: 30px;
     padding-left: 40px;
 }
-
-#about3 .para .btn {
-    margin-right: 0;
-}
-
 #about3 .para h5 {
     text-transform: uppercase;
     font-weight: 500;
@@ -432,14 +489,12 @@ nav.navbar ul.navbar-nav li {
     position: relative;
     border-bottom: 4px double;
 }
-
 #about3 .para h2 {
     font-size: 48px;
     font-weight: 700;
     margin-left: 20px;
     margin-bottom: 18px;
 }
-
 #about3 .para .btn {
     border-radius: 30px;
     border: none;
@@ -451,7 +506,10 @@ nav.navbar ul.navbar-nav li {
     background-color: #f3f3f3;
     margin-top: 20px;
 }
-
+#about3 .para .btn:hover{
+    background-color: var(--greenry);
+    color: white;
+}
 #about3 .para .btn i {
     color: #f3f3f3;
     background: var(--dark);
@@ -546,7 +604,19 @@ section {
     margin-bottom: 10px;
     width: 100%;
 }
-
+.services ul{
+    text-align: left;
+    list-style-type: none;
+    padding: 0;
+}
+.services ul li:before {
+    content: "\f058"; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-right: 10px;
+    color:var(--greenry) ;
+    font-weight: bold;
+  }
 /* ================================Start of Porfolio Section ===================*/
 
 .project-area {
@@ -923,7 +993,7 @@ section {
 
 #contact {
     text-align: center;
-    background: url(../assets/dev.ashish.png)center center;
+    background: url(../assets/dev.ashish.jpg)center center;
     background-attachment: fixed;
     background-size: cover;
     position: relative;
@@ -1302,5 +1372,8 @@ section {
     }
     .items2.d i:after {
         height: 176px;
+    }
+    #spinnerDiv h3{
+        top:33%;
     }
 }
