@@ -24,7 +24,7 @@
     integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
   <!-- ----------Aeshtech Custom Styling--------- -->
-  <link rel="stylesheet" href="css/mystyle.css">
+  <link rel="stylesheet" href="css/mystyle-min.css">
   <!-- ------------------------------------------------------------------------------------------------- -->
 </head>
 <style>
@@ -40,6 +40,20 @@
 <body>
   <!-- ===========Preloader============= -->
   <div id="loader-wrapper">
+
+    <div id="spinnerDiv">
+      <h3>AeshTech</h3>
+      <!-- ----------------Spinner--------------------- -->
+      <div class="loading-spinner"></div>
+
+      <!-- ----------------Bounsing Balls-------------- -->
+      <div class="loading-dots">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+      </div>
+  </div>
+
     <div class="loader-section section-left"></div>
     <div class="loader-section section-right"></div>
   </div>
@@ -61,7 +75,7 @@
             </div>
           </a>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu3 wow zoomIn" data-wow-duration="2s">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu3 wow zoomIn" data-wow-duration="2s" style="font-weight: bold;">
               <li class="nav-item">
                 <a class="nav-link active" data-scroll="" href="#header">Home</a>
               </li>
@@ -76,6 +90,9 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" data-scroll="" href="#contact">contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-scroll="" href="https://aeshtech.github.io/aeshtech-lite/Blogs/my_first_blog.html" target="_blank">Blog</a>
               </li>
             </ul>
           </div>
@@ -98,19 +115,19 @@
           </div>
           <ul class="social-icon2 list-unstyled">
             <li>
-              <a class="github" href="#"><i class="fab fa-github"></i></a>
+              <a class="github" href="https://github.com/Aeshtech" title="GitHub/Aeshtech" target="_blank"><i class="fab fa-github"></i></a>
             </li>
             <li>
-              <a class="linkedin" href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a class="linkedin" href="https://www.linkedin.com/in/Aeshtech/" title="Linkedin/Aeshtech" target="_blank"><i class="fab fa-linkedin-in"></i></a>
             </li>
             <li>
               <a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a>
             </li>
             <li>
-              <a class="instagram" href="#"><i class="fab fa-instagram"></i></a>
+              <a class="instagram" href="https://www.instagram.com/its_ashish_52/" title="Instagram/its_ashish_52" target="_blank"><i class="fab fa-instagram"></i></a>
             </li>
             <li>
-              <a class="twitter" href="#"><i class="fab fa-twitter"></i></a>
+              <a class="twitter" href="https://twitter.com/aeshtech" title="Twitter/Aeshtech" target="_blank"><i class="fab fa-twitter"></i></a>
             </li>
 
           </ul>
@@ -158,7 +175,7 @@
           <h5>about</h5>
           <h2>A few words<br>about us</h2>
           <p>Full Stack Developer ll SDE student. A fun loving person who love to make useful, meaningful and community oriented software. Proficient in Web Application Development and Programming with robust Data Structure and Alogorithms intellectuallity.</p>
-          <a class="btn" href=""><i class="fas fa-eye"></i>My Portfolio</a>
+          <a class="btn" href="https://drive.google.com/file/d/1Vv3v6q2XayHEqr2kyO51hCGkNT8x-NcH/view?usp=sharing" target="_blank"><i class="fas fa-eye"></i>Download Resume</a>
         </div>
       </div>
     </div>
@@ -178,26 +195,42 @@
         <div class="col-md-3 services wow zoomIn" data-wow-duration="1s" data-wow-offset="200">
           <img src="assets/services/1.jpg" alt="">
           <h6>Web Desigining</h6>
-          <p>I have been working on illustration design for 6 years. We will make you a brand that is catchy and leaves
-            a trace.</p>
+          <ul>
+            <li>Easy Navigation</li>
+            <li>Responsive</li>
+            <li>Interactive</li>
+            <li>SEO Friendly</li>
+          </ul>
         </div>
         <div class="col-md-3 services wow zoomIn" data-wow-duration="1s" data-wow-offset="200">
           <img src="assets/services/2.jpg" alt="">
-          <h6>Web Development</h6>
-          <p>I have been working on illustration design for 6 years. We will make you a brand that is catchy and leaves
-            a trace.</p>
+          <h6>Web App Development</h6>
+          <ul>
+            <li>Framework Support</li>
+            <li>VCS Support (Git)</li>
+            <li>Maintenance</li>
+            <li>Database Adminstration</li>
+          </ul>
         </div>
         <div class="col-md-3 services wow zoomIn" data-wow-duration="1s" data-wow-offset="200">
           <img src="assets/services/3.jpg" alt="">
-          <h6>Mobile Application Development</h6>
-          <p>I have been working on illustration design for 6 years. We will make you a brand that is catchy and leaves
-            a trace.</p>
+          <h6>Mobile App Development</h6>
+         <ul>
+           <li>Platform Appropriate</li>
+           <li>Unique Desgin</li>
+           <li>Maintenance</li>
+           <li>Hybrid Cross-Platform</li>
+          </ul>
         </div>
         <div class="col-md-3 services wow zoomIn" data-wow-duration="1s" data-wow-offset="200">
           <img src="assets/services/4.jpg" alt="">
           <h6>ERP Development</h6>
-          <p>I have been working on illustration design for 6 years. We will make you a brand that is catchy and leaves
-            a trace.</p>
+         <ul>
+           <li>Alert & Dashboard</li>
+           <li>Financial Reports</li>
+           <li>Maintenance</li>
+           <li>Messaging</li>
+         </ul>
         </div>
       </div>
     </div>
@@ -223,17 +256,17 @@
         <div class="col-lg-4 col-md-6 col-sm-12 element-item">
         <div class="our-project  wow fadeInUp" data-wow-duration="1s" data-wow-offset="200">
           <div class="img">
-            <img src="assets/Project-gallery/Aeshtech-V1.png" alt="portfolio-1" class="img-fluid">
+            <img src="assets/Project-gallery/Aeshtech_V1.jpg" alt="portfolio-1" class="img-fluid">
             <div class="search">
-              <a href="assets/gallery_pic.png" class="test-popup-link"><i class="fas fa-search-plus"></i></a>
+              <a href="assets/Project-gallery/Info-Aeshtech-V1.jpg" class="test-popup-link"><i class="fas fa-search-plus"></i></a>
             </div>
           </div>
           <div class="title pb-3">
-            <h4>Aeshtech-V1</h4>
+            <h4>Aeshtech-Lite</h4>
             <span class="text-secondary">June 2020</span>
             <div class="project-links">
-              <a href="#" class="fab fa-github" aria-hidden="true"></a>
-              <a href="#" class="fa fa-eye" aria-hidden="true"></a>
+              <a href="https://aeshtech.github.io/aeshtech-lite/" target="_blank" class="fa fa-eye" aria-hidden="true"></a>
+              <a href="https://github.com/Aeshtech/aeshtech-lite" target="_blank" class="fab fa-github" aria-hidden="true"></a>
             </div>
           </div>
         </div>
@@ -241,17 +274,17 @@
         <div class="col-lg-4 col-md-6 col-sm-12 element-item popular top-three">
           <div class="our-project wow fadeInUp" data-wow-duration="1s" data-wow-offset="200">
             <div class="img">
-              <img src="assets/Project-gallery/Covd19-India-Tracker.png" alt="portfolio-1" class="img-fluid">
+              <img src="assets/Project-gallery/Covd19-India-Tracker.jpg" alt="portfolio-1" class="img-fluid">
               <div class="search">
-                <a href="assets/gallery_pic.png" class="test-popup-link"><i class="fas fa-search-plus"></i></a>
+                <a href="assets/Project-gallery/Info-Covid19-Tracker.jpg" class="test-popup-link"><i class="fas fa-search-plus"></i></a>
               </div>
             </div>
             <div class="title pb-3">
               <h4>Covid19 India Tracker</h4>
               <span class="text-secondary">August 2020</span>
               <div class="project-links">
-                <a href="#" class="fab fa-github" aria-hidden="true"></a>
-                <a href="#" class="fa fa-eye" aria-hidden="true"></a>
+                <a href="http://covid.aeshtech.com" class="fa fa-eye" aria-hidden="true"></a>
+                <a href="https://github.com/Aeshtech/covid-19-Tracker" target="_blank" class="fab fa-github" aria-hidden="true"></a>
               </div>
             </div>
           </div>
@@ -259,17 +292,16 @@
         <div class="col-lg-4 col-md-6 col-sm-12 element-item popular top-three">
           <div class="our-project  wow fadeInUp" data-wow-duration="1s" data-wow-offset="200">
             <div class="img">
-              <img src="assets/Project-gallery/DigiVGI.png" alt="portfolio-1" class="img-fluid">
+              <img src="assets/Project-gallery/DigiVGI.jpg" alt="portfolio-1" class="img-fluid">
               <div class="search">
-                <a href="assets/gallery_pic.png" class="test-popup-link"><i class="fas fa-search-plus"></i></a>
+                <a href="assets/Project-gallery/Info-DigiVGI.jpg" class="test-popup-link"><i class="fas fa-search-plus"></i></a>
               </div>
             </div>
             <div class="title pb-3">
               <h4>DigiVGI</h4>
               <span class="text-secondary">Aug 2020- Jan 2021</span>
               <div class="project-links">
-                <a href="#" class="fab fa-github" aria-hidden="true"></a>
-                <a href="#" class="fa fa-eye" aria-hidden="true"></a>
+                <strong style="color:blue;">Private</strong>
               </div>
             </div>
           </div>
@@ -277,17 +309,15 @@
         <div class="col-lg-4 col-md-6 col-sm-12 element-item popular latest top-three">
           <div class="our-project  wow fadeInUp" data-wow-duration="1s" data-wow-offset="200">
             <div class="img">
-              <img src="assets/Project-gallery/Aeshtech-V2.png" alt="portfolio-1" class="img-fluid">
+              <img src="assets/Project-gallery/Aeshtech-V2.jpg" alt="portfolio-1" class="img-fluid">
               <div class="search">
-                <a href="assets/gallery_pic.png" class="test-popup-link"><i class="fas fa-search-plus"></i></a>
+                <a href="assets/Project-gallery/Info-Aeshtech-V2.jpg" class="test-popup-link"><i class="fas fa-search-plus"></i></a>
               </div>
             </div>
             <div class="title pb-3">
-              <h4>Aeshtech-V2</h4>
+              <h4>Aeshtech</h4>
               <span class="text-secondary">May 2021</span>
               <div class="project-links">
-                <a href="#" class="fab fa-github" aria-hidden="true"></a>
-                <a href="#" class="fa fa-eye" aria-hidden="true"></a>
               </div>
             </div>
           </div>
@@ -297,15 +327,15 @@
             <div class="img">
               <img src="assets/Project-gallery/STRM.jpg" alt="portfolio-1" class="img-fluid">
               <div class="search">
-                <a href="assets/gallery_pic.png" class="test-popup-link"><i class="fas fa-search-plus"></i></a>
+                <a href="assets/Project-gallery/Info-STRM.jpg" class="test-popup-link"><i class="fas fa-search-plus"></i></a>
               </div>
             </div>
             <div class="title pb-3">
               <h4>Student-Teacher Record Manager</h4>
               <span class="text-secondary">July 2020</span>
               <div class="project-links">
-                <a href="#" class="fab fa-github" aria-hidden="true"></a>
-                <a href="#" class="fa fa-eye" aria-hidden="true"></a>
+                <a href="https://aeshtech.github.io/AMS_DOM/" target="_blank" class="fa fa-eye" aria-hidden="true"></a>
+                <a href="https://github.com/Aeshtech/AMS_DOM" target="_blank" class="fab fa-github" aria-hidden="true"></a>
               </div>
             </div>
           </div>
@@ -315,15 +345,15 @@
             <div class="img">
               <img src="assets/Project-gallery/CRUD-App.jpg" alt="portfolio-1" class="img-fluid">
               <div class="search">
-                <a href="assets/gallery_pic.png" class="test-popup-link"><i class="fas fa-search-plus"></i></a>
+                <a href="assets/Project-gallery/Info-CRUD-App.jpg" class="test-popup-link"><i class="fas fa-search-plus"></i></a>
               </div>
             </div>
             <div class="title pb-3">
               <h4>CRUD-App</h4>
-              <span class="text-secondary">December 2020</span>
+              <span class="text-secondary">June 2020</span>
               <div class="project-links">
-                <a href="#" class="fab fa-github" aria-hidden="true"></a>
-                <a href="#" class="fa fa-eye" aria-hidden="true"></a>
+                <a href="https://aeshtech.github.io/CRUD-App/index.html" target="_blank" class="fa fa-eye" aria-hidden="true"></a>
+                <a href="https://github.com/Aeshtech/CRUD-App" target="_blank" class="fab fa-github" aria-hidden="true"></a>
               </div>
             </div>
           </div>
@@ -607,11 +637,8 @@
         <div class="col-md-12">
           <h5>Contact</h5>
           <h2 class="wow fadeInRight" data-wow-duration="1s" data-wow-offset="100">Get in Touch</h2>
-          <p class="wow flipInX" data-wow-duration="2s" data-wow-offset="100">My Availability Personal portfolios are
-            used to plan, organize and document education,<br>work samples and
-            skills. document education, work samples and skills</p>
+          <p class="wow flipInX" data-wow-duration="2s" data-wow-offset="100">A "Project" is just like a "Painting". It develops twice, first in the brain and then in the real world.<br>For any inquiry or to give your valuable feedback please send mail. We will answer all your questions.</p>
         </div>
-      </div>
       <div class="row">
         <div class="col-md-8" style="margin: auto;">
           <div class="conform wow zoomIn" data-wow-duration="3s">
@@ -677,8 +704,8 @@
         <div class="row">
           <div class="col-lg-3 col-md-6">
             <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="1s">
-              <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
-              <p>Don’t miss any updates of our new templates and extensions.!</p>
+              <h3 class="f-title f_600 t_color f_size_18">Wanna own app?</h3>
+              <p>If you liked what we do, so press a like button below. Please give us a chance to serve you from our experience. Feel free to contact us for any inquiry, we will surely try to contact you as soon as possible.</p>
 
               <!-- LikeBtn.com BEGIN -->
               <span class="likebtn-wrapper" data-theme="github" data-white_label="true" data-identifier="item_1"
@@ -698,7 +725,7 @@
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#resume">Resume</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#">Aeshtech Old Version</a></li>
+                <li><a href="https://aeshtech.github.io/aeshtech-lite/" title="Aeshtech-lite" target="_blank">Aeshtech-Lite</a></li>
               </ul>
             </div>
           </div>
@@ -715,11 +742,11 @@
             <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" data-wow-duration="1s">
               <h3 class="f-title f_600 t_color f_size_18">Connect with me on</h3>
               <div class="f_social_icon">
-                <a href="#" class="fab fa-github"></a>
-                <a href="#" class="fab fa-linkedin"></a>
-                <a href="#" class="fab fa-facebook"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-twitter"></a>
+                <a href="https://github.com/Aeshtech" title="GitHub/Aeshtech"  target="_blank" class="fab fa-github"></a>
+                <a href="https://www.linkedin.com/in/Aeshtech/" title="Linkedin/Aeshtech"  target="_blank" class="fab fa-linkedin"></a>
+                <a href="#" title="facebook" class="fab fa-facebook"></a>
+                <a href="https://www.instagram.com/its_ashish_52/" title="Instagram/its_ashish_52"  target="_blank" class="fab fa-instagram"></a>
+                <a href="https://twitter.com/aeshtech"  title="Twitter/Aeshtech"  target="_blank" class="fab fa-twitter"></a>
               </div>
             </div>
           </div>
@@ -765,7 +792,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
     crossorigin="anonymous"></script>
-  <script src="js/custom.js" type="text/Javascript"></script>
+  <script src="js/custom-min.js" type="text/Javascript"></script>
   <script>
     // WOW JS
     new WOW().init();
