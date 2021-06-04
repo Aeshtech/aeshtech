@@ -1,10 +1,9 @@
 // --------------------------------------Jai shree Krishna---------------------------------------//
+
 // change background color to white and shadow of navbar on scroll down.
-window.addEventListener("contextmenu", e => e.preventDefault());
 $(document).ready(function () {
   'use strict';
 
-  
   //preloader
   setTimeout(function () {
     $('body').addClass('loaded');
@@ -115,12 +114,6 @@ $('.owl-carousel').owlCarousel({
     }
   }
 })
-
-//just making hack solution for protecting from unresponsive testimonials in low width device.
-var header = $('#testimonials');
-setTimeout(function () {
-  header.removeClass('testimonials-display');
-}, 1000);
 
 })
 
@@ -254,5 +247,25 @@ any of setErrorMsg to false than this will return false.*/
     return true;
   }else{
     return false;
+  }
+}
+
+//============Some practise to hide source code.===============
+window.addEventListener("contextmenu", e => e.preventDefault());
+document.onkeydown = function(e) {
+  if(event.keyCode == 123) {
+     return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+     return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+     return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+     return false;
+  }
+  if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+     return false;
   }
 }
