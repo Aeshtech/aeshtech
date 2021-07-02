@@ -2,7 +2,6 @@
 
 // change background color to white and shadow of navbar on scroll down.
 $(document).ready(function () {
-  'use strict';
 
   //preloader
   setTimeout(function () {
@@ -47,29 +46,6 @@ $(document).ready(function(){
     contentType: 'html',
     loopCount: true
   });
-});
-
-// ============targeting project gallery button for data-filter using isotope library===========//
-let $btns = $('.project-area .button-group button');
-
-$btns.click(function (e) {
-
-  $('.project-area .button-group button').removeClass('active');
-  e.target.classList.add('active');
-
-  let selector = $(e.target).attr('data-filter');
-  $('.project-area .grid').isotope({
-    filter: selector
-  });
-  return false;
-})
-
-//targeting project gallery button appear on hover to magnify described image in html using magnific-popup
-$('.project-area .button-group #btn1').trigger('click');
-
-$('.project-area .grid .test-popup-link').magnificPopup({
-  type: 'image',
-  gallery: { enabled: true }
 });
 
 
@@ -147,6 +123,36 @@ $(window).scroll(function() {
     counted = 1;
   }
 });
+
+// ============targeting project gallery button for data-filter using isotope library===========//
+$(document).ready(function () {
+
+let $btns = $('.project-area .button-group button');
+
+$btns.click(function (e) {
+
+  $('.project-area .button-group button').removeClass('active');
+  e.target.classList.add('active');
+
+  let selector = $(e.target).attr('data-filter');
+  $('.project-area .grid').isotope({
+    filter: selector
+  });
+  return false;
+})
+$('.project-area .button-group #btn1').trigger('click');
+
+//targeting project gallery button appear on hover to magnify described image in html using magnific-popup
+$('.project-area .grid .test-popup-link').magnificPopup({
+  type: 'image',
+  gallery: { enabled: true }
+});
+// layout Isotope after each image loads
+$('.project-area .grid').imagesLoaded().progress( function() {
+  $('.project-area .grid').isotope('layout');
+});
+
+})
 
 /*===========================Contact Form with validation===============================*/
 contactForm = document.getElementById("myForm");
